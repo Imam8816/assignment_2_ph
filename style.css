@@ -1,12 +1,46 @@
+.all{
+    margin: 1px;
+    padding: 0px;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* font  */
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.raleway{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;;
+  font-style: normal;
+  }
+
+
 /* Nav bar  */
 .head{
    display: flex;
    height: 71px;
    width: 1140px;
-   background-color:beige ;
+   /* background-color:beige ; */
    align-items: center;
    justify-content:space-between ;
    margin-left: 150px;
+   margin-right: 150px;
    margin-top: 30px;
 }
 
@@ -57,5 +91,75 @@
      
     justify-content: right;
 }
-    
-}                  
+}
+
+
+                                      /* Banner  */
+.banner{
+    display: flex;
+   height: 461px;
+   width: 1140px;
+   /* background-color:beige ; */
+   align-items:flex-end;
+   justify-content:center ;
+   margin-left:150px;
+    margin-right: 150px;
+   margin-top:120px;
+}
+
+.pera{
+    height: 299px;
+   width: 570px;
+   /* background-color: aqua; */
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+}
+.title{
+    font-size: 65px;
+    font-weight:bold;
+}
+#orange{
+    color: #E95A08;
+}
+
+.detail{
+    font-size: 22px;
+    font-weight: 400px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+.image{
+    height: 355px;
+   width: 570px;
+   /* background-color: mediumpurple; */
+}
+                                     /* Mobile Responsive */
+@media screen and (max-width: 576px){
+    .banner{
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    height: auto;
+   width: auto;
+    flex-direction: column-reverse;
+   
+}
+.image{
+    margin: auto;
+    height: auto;
+   width: auto;
+   
+}
+.i{
+    width: 100%;
+}
+.pera{
+    margin: auto;
+    height: auto;
+   width: auto;
+   }
+
+}                                     
